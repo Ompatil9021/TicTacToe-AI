@@ -1,0 +1,160 @@
+/* ====== GLOBAL STYLING ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ====== WELCOME SCREEN ====== */
+#welcome {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+#welcome h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#welcome input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  width: 230px;
+  outline: none;
+  margin-top: 15px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-weight: 500;
+}
+
+#welcome button {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  border: none;
+  color: #222;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#welcome button:hover {
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  transform: translateY(-2px);
+}
+
+/* ====== GAME BOARD ====== */
+#gameBoard {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  padding: 25px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  margin-top: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+#playerTurn {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* ====== BOARD GRID ====== */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+  gap: 12px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 110px;
+  height: 110px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  font-size: 2.8rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cell:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Highlight colors for X and O */
+.cell:contains("X") {
+  color: #ff6b6b;
+}
+
+.cell:contains("O") {
+  color: #4ecdc4;
+}
+
+/* ====== RESULT SECTION ====== */
+#resultSection {
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#resultText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+#playAgain {
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  color: #222;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#playAgain:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+}
+
+/* ====== ANIMATIONS ====== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ====== UTILITY ====== */
+.hidden {
+  display: none;
+}

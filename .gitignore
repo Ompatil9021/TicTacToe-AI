@@ -1,0 +1,42 @@
+# Virtual environment
+venv/
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Editor folders
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Caches
+.pytest_cache/
+.mypy_cache/
+
+# Database
+*.sqlite3
+
+# Logs
+*.log
+
+# Node modules (if any front-end dependencies are added later)
+node_modules/
+
+# Ignore secrets
+secrets.*
+.env.local
+
+# Misc
+*.swp
+*~

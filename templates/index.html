@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unbeatable Tic-Tac-Toe AI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcome">
+    <h1>Welcome to Unbeatable Tic-Tac-Toe 🤖</h1>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <!-- Game Board -->
+  <div id="gameBoard" class="hidden">
+    <h2 id="playerTurn"></h2>
+    <div class="board" id="board"></div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="hidden">
+      <h3 id="resultText"></h3>
+      <button id="playAgain">Play Again</button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
