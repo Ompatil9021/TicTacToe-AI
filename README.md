@@ -8,12 +8,12 @@ The backend is built using **Flask (Python)**, and the frontend uses **HTML, CSS
 ---
 
 ## 🚀 Preview Screenshot  
-(Add your images inside `/templates/`)
+
 
 <p align="center">
-  <img src="templates/1.png" width="300">
-  <img src="templates/2.png" width="300">
-  <img src="templates/3.png" width="300">
+  <img src="templates/1.png" width="300"><br>
+  <img src="templates/2.png" width="300"><br>
+  <img src="templates/3.png" width="300"><br>
 </p>
 
 ---
