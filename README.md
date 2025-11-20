@@ -65,3 +65,31 @@ TicTacToe-AI/
 
 ```bash
 git clone https://github.com/Ompatil9021/TicTacToe-AI.git
+```
+
+
+### 2️⃣ Go into the Project Folder
+
+```bash
+cd TicTacToe-AI
+```
+
+### 2️⃣ Type to update flask
+
+```bash
+pip install flask
+```
+
+
+### 3️⃣ Type to run Server
+
+```bash
+python app.py
+```
+
+### 4️⃣ Open the Game in Browser
+
+```bash
+http://127.0.0.1:5000/
+```
+
