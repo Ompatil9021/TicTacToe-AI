@@ -1,32 +1,34 @@
-<<<<<<< HEAD
-# TicTacToe-AI
-=======
-# TicTacToe-AI
+# TicTacToe-AI (Unbeatable AI using Minimax + Alpha–Beta Pruning)
 
-Simple Tic Tac Toe web app (Flask) with frontend under `static/` and a main app in `app.py`.
+This project is a web-based Tic Tac Toe game where the human player **cannot defeat the AI**.  
+The AI is powered by the **Minimax algorithm** enhanced with **Alpha–Beta pruning**, making it optimal, fast, and unbeatable.
 
-How to run locally:
-
-1. Create a virtual environment and install dependencies:
-
-   python -m venv venv
-   venv\Scripts\activate
-   pip install -r requirements.txt  # if you have one, otherwise install Flask
-
-2. Run the app:
-
-   set FLASK_APP=app.py; flask run
-
-Notes:
------
-- This repository previously had merge markers in the README; they've been removed and the file cleaned.
-- If you have a `venv/` directory locally, it's recommended to remove it before pushing or ensure it's listed in `.gitignore`.
-
-License
--------
-Add a license file (e.g., `LICENSE`) if you want a specific open-source license applied to this repo.
+The backend is built using **Flask (Python)**, and the frontend is rendered using HTML/CSS/JS.
 
 ---
-Updated and cleaned README.md
-Remote repo may have had a README already; this file contains the merged contents.
->>>>>>> bb8bfe9 (Initial commit)
+
+## 🔥 Features
+
+- ✔️ Unbeatable AI (Minimax + Alpha–Beta Pruning)  
+- ✔️ Real-time gameplay against computer  
+- ✔️ Alpha–Beta pruning drastically improves computation speed  
+- ✔️ Clean Flask backend  
+- ✔️ Simple and responsive UI  
+- ✔️ Fully open source  
+
+---
+
+## 🧠 AI Logic (Minimax + Alpha–Beta)
+
+The AI evaluates all possible game states using the **Minimax** algorithm, ensuring it always chooses the optimal move.  
+To improve speed, **Alpha–Beta pruning** removes branches that don’t need evaluation, allowing lightning-fast decisions.
+
+### Evaluation Rules:
+- AI (`O`) win → **+10**
+- Player (`X`) win → **–10**
+- Draw → **0**
+
+---
+
+## 🧩 Project Structure
+
