@@ -41,24 +41,6 @@ The AI checks every possible move using **Minimax**:
 
 Alpha–Beta pruning reduces unnecessary evaluations, making the AI’s responses instant while staying optimal.
 
----
-
-## 📂 Project Folder Structure
-
-TicTacToe-AI/
-│
-├── app.py
-├── requirements.txt
-│
-├── templates/
-│ └── index.html
-│
-├── static/
-│ ├── style.css
-│ └── script.js
-│
-└── assets/
-└── preview.png (Your screenshot goes here)
 
 
 
