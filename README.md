@@ -8,9 +8,11 @@ The backend is built using **Flask (Python)**, and the frontend uses **HTML, CSS
 ---
 
 ## 🚀 Preview Screenshot  
-(Add your image inside `/assets/preview.png`)
+(Add your image inside `/templates/`)
 
-![Project Preview](assets/preview.png)
+![Preview 1](templates/1.png)
+![Preview 2](templates/2.png)
+![Preview 3](templates/3.png)
 
 ---
 
